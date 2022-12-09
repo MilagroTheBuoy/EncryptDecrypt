@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewInsertText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInsertText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editMessage"
+                android:layout_width="match_parent"
+                android:layout_height="460dp"
+                android:layout_marginTop="6dp"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="When I was in the army, I saw many things."
+                android:inputType="textMultiLine"
+                android:text="When I was in the army, I saw many things. Many things. Many things.I saw babies. I saw teenagers. I saw adults. I saw many things. MANY THINGS! I was so blessed to see many good things. I was not so blessed to see many bad things. This is Miso_Least_Goated, reporting from universe 23_Dashlane_6, in the Okkorpa district.  I hope to hear from my brother On_Goated_Level soon. " />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textViewEnterCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Code Word"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <EditText
+                android:id="@+id/editCodeWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="DOGGO"
+                android:inputType="textPersonName"
+                android:text="DOGGO" />
+
+            <TextView
+                android:id="@+id/textViewSelectMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Mode"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <RadioGroup
+                android:id="@+id/rgpModeSelectGroup"
+                android:layout_width="match_parent"
+                android:layout_height="96dp">
+
+                <RadioButton
+                    android:id="@+id/radEncrypt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Encrypt" />
+
+                <RadioButton
+                    android:id="@+id/radDecrypt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Decrypt" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editNumCycles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="26" />
+
+            <EditText
+                android:id="@+id/editChangeFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btnDoTheThing"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text="Do the thing"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
