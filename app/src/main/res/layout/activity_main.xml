@@ -59,7 +59,8 @@
                 android:text="Enter Code Word"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="#FFFFFF"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
 
             <EditText
                 android:id="@+id/editCodeWord"
@@ -67,11 +68,14 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="DOGGO"
+                android:text="DOGGO"
+                android:textColorHint="EEEEEE"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:text="DOGGO"
-                android:textColor="#FFFFFF" />
-
+                android:paddingLeft="16dp"
+                android:background="@drawable/edit_background"
+                android:textColor="@color/white"
+                android:paddingBottom="8dp"/>
             <TextView
                 android:id="@+id/textViewSelectMode"
                 android:layout_width="match_parent"
@@ -79,7 +83,7 @@
                 android:text="Select Mode"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="#FFFFFF"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <RadioGroup
                 android:id="@+id/rgpModeSelectGroup"
@@ -99,8 +103,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Decrypt"
-                    android:textColor="#FFFFFF" />
-
+                    android:textColor="#FFFFFF"
+                    android:paddingBottom="0dp"/>
             </RadioGroup>
 
             <EditText
@@ -111,7 +115,9 @@
                 android:inputType="number"
                 android:minHeight="48dp"
                 android:text="26"
-                android:textColor="#FFFFFF"/>
+                android:background="@drawable/edit_background"
+                android:paddingLeft="16dp"
+                android:textColor="#FFFFFF" />
 
             <EditText
                 android:id="@+id/editChangeFrequency"
@@ -121,18 +127,29 @@
                 android:inputType="number"
                 android:minHeight="48dp"
                 android:text="1"
-                android:textColor="#FFFFFF"/>
+                android:background="@drawable/edit_background"
+                android:paddingLeft="16dp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="8dp"/>
 
-            <Button
-                android:id="@+id/btnDoTheThing"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="DO THE THING"
-                android:background="@color/white"
-                android:textAllCaps="false"
-                android:textColor="#C2185B"
-                app:iconTint="#FFFFFF"
-                app:backgroundTint="@null"/>
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnDoTheThing"
+                    android:layout_width="192dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/button_background"
+                    android:text="DO THE THING"
+                    android:textAllCaps="false"
+                    android:textColor="#C2185B"
+                    app:backgroundTint="@null"
+                    app:iconTint="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </LinearLayout>
