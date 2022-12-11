@@ -126,13 +126,14 @@
             <Button
                 android:id="@+id/btnDoTheThing"
                 android:layout_width="match_parent"
-                android:layout_height="49dp"
-                android:background="#FFFFFF"
-                android:backgroundTint="#FFFFFF"
-                android:text="Do the thing"
+                android:layout_height="48dp"
+                android:text="DO THE THING"
+                android:background="@color/white"
                 android:textAllCaps="false"
                 android:textColor="#C2185B"
-                app:iconTint="#FFFFFF" />
+                app:iconTint="#FFFFFF"
+                app:backgroundTint="@null"/>
+
 
         </LinearLayout>
     </ScrollView>
