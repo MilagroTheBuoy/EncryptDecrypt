@@ -75,7 +75,7 @@
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:paddingLeft="16dp"
-                android:background="@drawable/edit_background"
+                style="@style/EditText"
                 android:textColor="@color/white"
                 android:paddingBottom="8dp"/>
             <TextView
@@ -117,7 +117,7 @@
                 android:inputType="number"
                 android:minHeight="48dp"
                 android:text="26"
-                android:background="@drawable/edit_background"
+                style="@style/EditText"
                 android:paddingLeft="16dp"
                 android:textColor="#FFFFFF" />
 
@@ -129,7 +129,7 @@
                 android:inputType="number"
                 android:minHeight="48dp"
                 android:text="1"
-                android:background="@drawable/edit_background"
+                style="@style/EditText"
                 android:paddingLeft="16dp"
                 android:textColor="#FFFFFF"
                 android:paddingBottom="8dp" />
@@ -142,7 +142,7 @@
                     android:id="@+id/btnDoTheThing"
                     android:layout_width="192dp"
                     android:layout_height="48dp"
-                    android:background="@drawable/button_background"
+                    style="@style/Buttons"
                     android:text="DO THE THING"
                     android:textAllCaps="false"
                     android:textColor="#C2185B"
